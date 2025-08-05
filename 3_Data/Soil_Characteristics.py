@@ -2,6 +2,7 @@ import numpy as np
 
 
 # ----- Initialize the soil data -----
+# input soil data
 xx=np.array([   [0.09, 0.475, 0.0268, 37.31, 0.131, 1.44, (0+45)/2, (45-0)/2], #clay
                 [0.075, 0.366, 0.0386, 25.91, 0.194, 5.52, (20+45)/2, (45-20)/2], #clay loam
                 [0.027, 0.463, 0.0897, 11.15, 0.22, 31.68, (23+52)/2, (52-23)/2], #loam
@@ -17,7 +18,7 @@ nb_soils = len(xx)
 
 soil_types = ["Clay", "Clay Loam", "Loam", "Loamy Sand", "Sand", "Sandy Clay Loam", "Sandy Loam", "Silt Loam", "Silty Clay Loam"]
 
-
+# format the soil data
 thr_xx = xx[:,0]
 ths_xx = xx[:,1]
 h0_xx  = -1*xx[:,3]
